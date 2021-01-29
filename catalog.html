@@ -34,7 +34,7 @@
       </div>
 
       <div>
-        <p>Равшан Джамшутович <a href="index.html">Выйти</a></p>
+        <p><a href="blank.html">Равшан Джамшутович</a><a href="index.html">Выйти</a></p>
 
         <ul>
           <li>
@@ -83,35 +83,36 @@
       <form action="#" method="GET">
         <fieldset>
           <legend>Цена:</legend>
-          <input type="range">
-          <p><span>0</span> - <span>30000</span></p>
+          <input type="text">
+          <span>-</span>
+          <input type="text">
         </fieldset>
         <fieldset>
           <legend>Производители:</legend>
           <ul>
             <li>
-              <label>Bosch
-                <input type="checkbox" name="manufact-bosch" checked>
+              <label>
+                <input type="checkbox" name="manufact-bosch" checked> Bosch
               </label>
             </li>
             <li>
-              <label>Интерскол
-                <input type="checkbox" name="manufact-interskol">
+              <label>
+                <input type="checkbox" name="manufact-interskol"> Интерскол
               </label>
             </li>
             <li>
-              <label>Makita
-                <input type="checkbox" name="manufact-makita" checked>
+              <label>
+                <input type="checkbox" name="manufact-makita" checked> Makita
               </label>
             </li>
             <li>
-              <label>Dewalt
-                <input type="checkbox" name="manufact-dewalt">
+              <label>
+                <input type="checkbox" name="manufact-dewalt"> Dewalt
               </label>
             </li>
             <li>
-              <label>Hitachi
-                <input type="checkbox" name="manufact-hirachi">
+              <label>
+                <input type="checkbox" name="manufact-hirachi"> Hitachi
               </label>
             </li>
           </ul>
@@ -120,18 +121,18 @@
           <legend>Питание:</legend>
           <ul>
             <li>
-              <label>Аккумуляторные
-                <input type="radio" name="power-group" value="battery-supply" checked>
+              <label>
+                <input type="radio" name="power-group" value="battery-supply" checked> Аккумуляторные
               </label>
             </li>
             <li>
-              <label>Сетевые
-                <input type="radio" name="power-group" value="mains-supply">
+              <label>
+                <input type="radio" name="power-group" value="mains-supply"> Сетевые
               </label>
             </li>
           </ul>
         </fieldset>
-        <button type="button">Показать</button>
+        <button type="submit">Показать</button>
 
       </form>
     </section>
@@ -149,6 +150,8 @@
           <li>
             <button type="button">По функционалу</button>
           </li>
+        </ul>
+        <ul>
           <li>
             <button type="button">Вверх</button>
           </li>
