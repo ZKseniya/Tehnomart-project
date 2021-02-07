@@ -66,6 +66,7 @@
   --bg-img: #A9A9A9;
   --footer-link-color: #FFDA96;
   --text-color: #000000;
+  --text-color-opacity: rgba(0, 0, 0, 0.3);
   --text-color-active: #C5C5C5;
   --link-color-active: rgba(255, 255, 255, 0.5);
 
@@ -75,6 +76,12 @@
   --color-discount: #8ED78F;
   --color-delivery: #FFC047;
   --promo-link-color: rgba(255, 255, 255, 0.3);
+
+  /*Catalog*/
+
+  --catalog-title-bg: #F7F3EC;
+  --border-color: #E5E5E5;
+
 
 }
 
@@ -514,3 +521,108 @@ a {
 .catalog-title .title {
   color: var(--accent-color);
 }
+
+/* Filter */
+
+.filter, .sort, .filter-title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.sort, .filter-title  {
+  background: var(--catalog-title-bg);
+}
+
+.filter-set {
+  border: none;
+}
+
+.set-title {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.filter-btn {
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  font-style: normal;
+  color: var(--text-color);
+  background: var(--basic-color);
+  border: 1px solid;
+  border-color: var(--border-color);
+}
+
+/* Сортировка */
+
+.sort-item, .scroll-item {
+  list-style-type: none;
+}
+
+.sort-btn {
+  color: var(--text-color-opacity);
+  border-bottom: 1px dotted;
+  border-color: var(--button-color);
+}
+
+.sort-btn:hover {
+  color: var(--text-color);
+  border-bottom: 1px solid;
+  border-color: var(--button-color);
+}
+
+.scroll-btn {
+  color: var(--text-color-opacity);
+}
+
+.scroll-btn:hover {
+  color: var(--text-color);
+}
+
+.sort-btn.active, .scroll-btn.active {
+  color: var(--button-color);
+  border: none;
+}
+
+/* Пагинация */
+
+.pag-item {
+  list-style-type: none;
+}
+
+.pag-link {
+  color: var(--text-color);
+  border: 1px solid;
+  border-color: var(--border-color);
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.pag-link:hover {
+  border-color: var(--text-color-active);
+}
+
+.pag-link:active {
+  border-color: var(--button-color);
+}
+
+.pag-link.active {
+  background: var(--button-color);
+  color: var(--basic-color);
+}
+
+/* Статья */
+
+.article {
+  background: var(--content-bg);
+}
+
+
