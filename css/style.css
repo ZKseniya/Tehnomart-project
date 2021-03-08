@@ -1922,7 +1922,7 @@ legend {
 }
 
 .modal-complete-cart {
-  display: block;
+  display: none;
   width: 620px;
   min-height: 280px;
   top: 120px;
