@@ -6,8 +6,8 @@
 
   <title>HTML Academy: Техномарт</title>
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/fav/32.svg" type="image/svg+xml">
@@ -26,7 +26,8 @@
         </a>
         <form class="search" action="https://echo.htmlacademy.ru" method="get">
           <input type="search" placeholder="Поиск: ">
-          <svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 17 17" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
               fill="white" />
@@ -79,7 +80,7 @@
       <div class="promo-item materials">
         <h3 class="promo-title">Материалы</h3>
         <a class="promo-link" href="blank.html">На любой вкус</a>
-        <a class="btn link new" href="blank.html">new</a>
+        <a class="btn link new" href="blank.html" aria-label="Новая услуга">new</a>
       </div>
 
       <div class="promo-item instruments">
@@ -113,7 +114,7 @@
           <a class="btn slider-btn" href="catalog.html">Открыть каталог</a>
         </div>
 
-            <div class="slider-item" data-tab="1">
+        <div class="slider-item" data-tab="1">
           <div class="slider-desc">
             <h3 class="slider-title">Дрели</h3>
             <p>Соседям на радость!</p>
@@ -122,12 +123,12 @@
           <a class="btn slider-btn" href="catalog.html">Открыть каталог</a>
         </div>
 
-        <button class="btn-back" type="button" disabled="true">Back</button>
-        <button class="btn-next" type="button">Next</button>
+        <button class="btn-back" type="button" aria-label="Предыдущий слайд"></button>
+        <button class="btn-next" type="button" aria-label="Следующий слайд"></button>
 
         <div class="slider-controls">
-          <button class="conrol-item active" data-tab="0" type="button" aria-label="Первый слайд"></button>
-          <button class="conrol-item" data-tab="1" type="button" aria-label="Второй слайд"></button>
+          <button class="control-item active" data-tab="0" type="button" aria-label="Первый слайд"></button>
+          <button class="control-item" data-tab="1" type="button" aria-label="Второй слайд"></button>
         </div>
       </div>
 
@@ -142,10 +143,12 @@
       <ul class="products-list">
         <li class="products-item">
 
-            <img class="product-img" src="img/catalog/object-1.jpg" width="200" height="177" alt="Изображение перфоратора марки BOSCH BFG 9000">
+          <img class="product-img" src="img/catalog/object-1.jpg" width="200" height="177"
+            alt="Изображение перфоратора марки BOSCH BFG 9000">
           <div class="btn-block">
             <a class="btn-buy" href="blank.html" aria-label="Добавить в корзину Перфоратор BOSCH BFG 9000">Купить</a>
-            <a class="btn-bookmark" href="blank.html" aria-label="Добавить в закладки Перфоратор BOSCH BFG 9000">В закладки</a>
+            <a class="btn-bookmark" href="blank.html" aria-label="Добавить в закладки Перфоратор BOSCH BFG 9000">В
+              закладки</a>
           </div>
           <a class="product-link" href="blank.html">
             Перфоратор BOSCH BFG 9000
@@ -156,13 +159,15 @@
         </li>
 
         <li class="products-item">
-            <img class="product-img" src="img/catalog/object-2.jpg" width="200" height="177" alt="Изображение перфоратора марки BOSCH BFG 3000">
+          <img class="product-img" src="img/catalog/object-2.jpg" width="200" height="177"
+            alt="Изображение перфоратора марки BOSCH BFG 3000">
 
           <div class="btn-block">
-            <a class="btn-buy" href="blank.html" aria-label="Добавить в корзину Перфоратор BOSCH BFG 3000" >Купить</a>
-            <a class="btn-bookmark" href="blank.html" aria-label="Добавить в закладки Перфоратор BOSCH BFG 3000">В закладки</a>
+            <a class="btn-buy" href="blank.html" aria-label="Добавить в корзину Перфоратор BOSCH BFG 3000">Купить</a>
+            <a class="btn-bookmark" href="blank.html" aria-label="Добавить в закладки Перфоратор BOSCH BFG 3000">В
+              закладки</a>
           </div>
-          <a class="btn link new" href="blank.html">new</a>
+          <a class="btn link new" href="blank.html" aria-label="Новый товар">new</a>
           <a class="product-link" href="blank.html">
             Перфоратор BOSCH BFG 3000
           </a>
@@ -172,11 +177,13 @@
         </li>
 
         <li class="products-item">
-            <img class="product-img" src="img/catalog/object-3.jpg" width="200" height="177" alt="Изображение перфоратора марки BOSCH BFG 6000">
+          <img class="product-img" src="img/catalog/object-3.jpg" width="200" height="177"
+            alt="Изображение перфоратора марки BOSCH BFG 6000">
 
           <div class="btn-block">
-            <a class="btn-buy" href="blank.html" aria-label="Добавить в корзину Перфоратор BOSCH BFG 6000" >Купить</a>
-            <a class="btn-bookmark" href="blank.html" aria-label="Добавить в закладки Перфоратор BOSCH BFG 6000">В закладки</a>
+            <a class="btn-buy" href="blank.html" aria-label="Добавить в корзину Перфоратор BOSCH BFG 6000">Купить</a>
+            <a class="btn-bookmark" href="blank.html" aria-label="Добавить в закладки Перфоратор BOSCH BFG 6000">В
+              закладки</a>
           </div>
           <a class="product-link" href="blank.html">
             Перфоратор BOSCH BFG 6000
@@ -187,13 +194,15 @@
         </li>
 
         <li class="products-item">
-            <img class="product-img" src="img/catalog/object-4.jpg" width="200" height="177" alt="Изображение перфоратора марки BOSCH BFG 2000">
+          <img class="product-img" src="img/catalog/object-4.jpg" width="200" height="177"
+            alt="Изображение перфоратора марки BOSCH BFG 2000">
 
           <div class="btn-block">
-            <a class="btn-buy" href="blank.html" aria-label="Добавить в корзину Перфоратор BOSCH BFG 2000" >Купить</a>
-            <a class="btn-bookmark" href="blank.html" aria-label="Добавить в закладки Перфоратор BOSCH BFG 2000">В закладки</a>
+            <a class="btn-buy" href="blank.html" aria-label="Добавить в корзину Перфоратор BOSCH BFG 2000">Купить</a>
+            <a class="btn-bookmark" href="blank.html" aria-label="Добавить в закладки Перфоратор BOSCH BFG 2000">В
+              закладки</a>
           </div>
-          <a class="btn link new" href="blank.html">new</a>
+          <a class="btn link new" href="blank.html" aria-label="Новый товар">new</a>
           <a class="product-link" href="blank.html">
             Перфоратор BOSCH BFG 2000
           </a>
@@ -452,7 +461,7 @@
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
-  <script src="js/indexScripts.js"></script>
+  <script src="js/scriptsforindex.min.js"></script>
 </body>
 
 </html>

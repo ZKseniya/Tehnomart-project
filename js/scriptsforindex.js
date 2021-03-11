@@ -1,24 +1,77 @@
 // Слайдер на главной странице
 
-const sliderItems = document.querySelectorAll('.slider-item');
-const sliderControls = document.querySelectorAll('.conrol-item');
+const sliderItems = Array.from(document.querySelectorAll('.slider-item'));
+const sliderControls = Array.from(document.querySelectorAll('.contxxxxxxxxxxxxxxxxxxxxxxxxxxxxrol-item'));
+const sliderButtons = document.querySelector('.promo-slider');
 const sliderNext = document.querySelector('.btn-next');
 const sliderBack = document.querySelector('.btn-back');
 
-sliderControls.forEach(function(control) {
-  control.addEventListener('click', function() {
-     let id = this.getAttribute('data-tab');
-     let slide = document.querySelector('.slider-item[data-tab="'+id+'"]');
-     let activeControl = document.querySelector('.conrol-item.active');
-     let activeSlide = document.querySelector('.slider-item.active');
+sliderButtons.onclick = function (event) {
 
-     activeControl.classList.remove('active');
-     control.classList.add('active');
+  let target = event.target;
+  let activeSlide = sliderItems.find(item => item.classList.contains('active'));
+  let activeControl = sliderControls.find(item => item.classList.contains('active'));
+  let nextSlide;
+  let nextControl;
+  let indexNextSlide;
+  let indexNextControl;
 
-     activeSlide.classList.remove('active');
-     slide.classList.add('active');
-  });
-});
+  function toggleClassActive () {
+    activeSlide.classList.remove('active');
+    nextSlide.classList.add('active');
+
+    activeControl.classList.remove('active');
+    nextControl.classList.add('active');
+  };
+
+  if (target.tagName != 'BUTTON') return;
+
+  if (target.classList.contains('btn-next')) {
+    indexNextSlide = sliderItems.indexOf(activeSlide) + 1;
+    indexNextControl = sliderControls.indexOf(activeControl) + 1;
+    nextSlide =  sliderItems[indexNextSlide];
+    nextControl = sliderControls[indexNextControl];
+
+    sliderBack.disabled = false;
+
+    if (indexNextSlide <= sliderItems.length - 1) {
+
+      toggleClassActive();
+    }
+
+    if (indexNextSlide == sliderItems.length - 1) {
+      sliderNext.disabled = true;
+    }
+  }
+
+  if (target.classList.contains('btn-back')) {
+    indexNextSlide = sliderItems.indexOf(activeSlide) - 1;
+    indexNextControl = sliderControls.indexOf(activeControl) - 1;
+    nextSlide =  sliderItems[indexNextSlide];
+    nextControl = sliderControls[indexNextControl];
+
+    sliderNext.disabled = false;
+
+    if (indexNextSlide >= 0) {
+
+      toggleClassActive();
+
+    }
+
+      if (indexNextSlide == 0) {
+        sliderBack.disabled = true;
+      }
+  }
+
+  if (target.classList.contains('control-item')) {
+    let id = target.getAttribute('data-tab');
+    nextControl = document.querySelector('.control-item[data-tab="'+id+'"]');
+    nextSlide = document.querySelector('.slider-item[data-tab="'+id+'"]');
+
+    toggleClassActive();
+  }
+}
+
 
 // Табы в секции сервисов
 
