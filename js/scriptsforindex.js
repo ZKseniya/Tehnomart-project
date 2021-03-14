@@ -1,7 +1,7 @@
 // Слайдер на главной странице
 
 const sliderItems = Array.from(document.querySelectorAll('.slider-item'));
-const sliderControls = Array.from(document.querySelectorAll('.contxxxxxxxxxxxxxxxxxxxxxxxxxxxxrol-item'));
+const sliderControls = Array.from(document.querySelectorAll('.control-item'));
 const sliderButtons = document.querySelector('.promo-slider');
 const sliderNext = document.querySelector('.btn-next');
 const sliderBack = document.querySelector('.btn-back');
@@ -149,10 +149,10 @@ const userText = modalUser.querySelector('.user-text');
 const userForm = modalUser.querySelector('.user-form');
 
 let isStorageSupport = true;
-let storage = "";
+let storage = '';
 
 try {
-  storage = localStorage.getItem("name");
+  storage = localStorage.getItem('name');
 } catch (err) {
   isStorageSupport = false;
 }
@@ -179,15 +179,15 @@ closeUser.addEventListener('click', function(evt) {
 
 // Валидация формы
 
-userForm.addEventListener("submit", function (evt) {
+userForm.addEventListener('submit', function (evt) {
   if (!userName.value || !userEmail.value || !userText.value) {
     evt.preventDefault();
-    modalUser.classList.remove("modal-error");
+    modalUser.classList.remove('modal-error');
     modalUser.offsetWidth = modalUser.offsetWidth;
-    modalUser.classList.add("modal-error");
+    modalUser.classList.add('modal-error');
   } else {
     if (isStorageSupport) {
-      localStorage.setItem("name", userName.value);
+      localStorage.setItem('name', userName.value);
     };
   };
 
@@ -195,20 +195,20 @@ userForm.addEventListener("submit", function (evt) {
 
 // Закрытие формы кнопкой Esc
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
-    if (modalUser.classList.contains("show")) {
+    if (modalUser.classList.contains('show')) {
       evt.preventDefault();
-      modalUser.classList.remove("show");
-      modalUser.classList.remove("modal-error");
+      modalUser.classList.remove('show');
+      modalUser.classList.remove('modal-error');
     }
-    if (modalMap.classList.contains("show")) {
+    if (modalMap.classList.contains('show')) {
       evt.preventDefault();
-      modalMap.classList.remove("show");
+      modalMap.classList.remove('show');
     }
-    if (modalCart.classList.contains("show")) {
+    if (modalCart.classList.contains('show')) {
       evt.preventDefault();
-      modalCart.classList.remove("show");
+      modalCart.classList.remove('show');
     }
   }
 });

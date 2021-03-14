@@ -27,11 +27,11 @@ continueShopping.addEventListener('click', function(evt) {
 
 // Закрытие формы кнопкой Esc
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
-    if (modalCart.classList.contains("show")) {
+    if (modalCart.classList.contains('show')) {
       evt.preventDefault();
-      modalCart.classList.remove("show");
+      modalCart.classList.remove('show');
     }
   }
 });
