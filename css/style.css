@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: "Cuprum";
-  src: url('../fonts/cuprum.woff2') format("woff2"),
-    url('../fonts/cuprum.woff') format("woff");
+  src: url("../fonts/cuprum.woff2") format("woff2"),
+    url("../fonts/cuprum.woff") format("woff");
 
   font-weight: 400;
   font-style: normal;
@@ -18,8 +18,8 @@
 
 @font-face {
   font-family: "Cuprum";
-  src: url('../fonts/cuprumbold.woff2') format("woff2"),
-    url('../fonts/cuprumbold.woff') format("woff");
+  src: url("../fonts/cuprumbold.woff2") format("woff2"),
+    url("../fonts/cuprumbold.woff") format("woff");
 
   font-weight: 700;
   font-style: normal;
@@ -27,8 +27,8 @@
 
 @font-face {
   font-family: "Cuprum";
-  src: url('../fonts/cuprumbolditalic.woff2') format("woff2"),
-    url('../fonts/cuprumbolditalic.woff') format("woff");
+  src: url("../fonts/cuprumbolditalic.woff2") format("woff2"),
+    url("../fonts/cuprumbolditalic.woff") format("woff");
 
   font-weight: 700;
   font-style: italic;
@@ -36,8 +36,8 @@
 
 @font-face {
   font-family: "PT Sans";
-  src: url('../fonts/ptsans.woff2') format("woff2"),
-    url('../fonts/ptsans.woff') format("woff");
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
 
   font-weight: 400;
   font-style: normal;
@@ -45,8 +45,8 @@
 
 @font-face {
   font-family: "PT Sans";
-  src: url('../fonts/ptsansbold.woff2') format("woff2"),
-    url('../fonts/ptsansbold.woff') format("woff");
+  src: url("../fonts/ptsansbold.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -400,11 +400,11 @@ a {
 }
 
 .item-bookmark::before {
-  background: url('../img/icon-bookmark.svg') no-repeat 0 0;
+  background: url("../img/icon-bookmark.svg") no-repeat 0 0;
 }
 
 .item-cart::before {
-  background: url('../img/icon-cart.svg') no-repeat 0 0;
+  background: url("../img/icon-cart.svg") no-repeat 0 0;
 }
 
 .item-bookmark:hover::before,
@@ -499,7 +499,7 @@ a {
   left: 37px;
   width: 18px;
   height: 19px;
-  background: url('../img/icon-phone.svg') no-repeat 0 0;
+  background: url("../img/icon-phone.svg") no-repeat 0 0;
 }
 
 .address {
@@ -550,7 +550,7 @@ a {
   left: 19px;
   width: 20px;
   height: 17px;
-  background: url('../img/icon-login.svg') no-repeat 0 0;
+  background: url("../img/icon-login.svg") no-repeat 0 0;
 }
 
 .user-login:hover,
@@ -560,7 +560,7 @@ a {
 }
 
 .user-login:hover::before {
-  background: url('../img/icon-login-hover.svg') no-repeat 0 0;
+  background: url("../img/icon-login-hover.svg") no-repeat 0 0;
 }
 
 .user-login:active,
@@ -617,7 +617,7 @@ a {
 
 .materials {
   background-color: var(--color-materials);
-  background-image: url('../img/icon-1.svg');
+  background-image: url("../img/icon-1.svg");
   background-position: 213px 55%;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -630,7 +630,7 @@ a {
 
 .instruments {
   background: var(--color-instruments);
-  background-image: url('../img/icon-2.svg');
+  background-image: url("../img/icon-2.svg");
   background-position: 194px 56%;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -642,7 +642,7 @@ a {
 
 .technics {
   background: var(--color-technics);
-  background-image: url('../img/icon-3.svg');
+  background-image: url("../img/icon-3.svg");
   background-position: 191px 50%;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -654,7 +654,7 @@ a {
 
 .discount {
   background: var(--color-discount);
-  background-image: url('../img/icon-4.svg');
+  background-image: url("../img/icon-4.svg");
   background-position: 195px 50%;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -666,7 +666,7 @@ a {
 
 .delivery {
   background: var(--color-delivery);
-  background-image: url('../img/icon-5.svg');
+  background-image: url("../img/icon-5.svg");
   background-position: 190px 52%;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -784,7 +784,7 @@ a {
   width: 21px;
   height: 39px;
   visibility: visible;
-  background: url('../img/icon-next.svg') no-repeat 0 0;
+  background: url("../img/icon-next.svg") no-repeat 0 0;
   z-index: 15;
 }
 
@@ -808,7 +808,7 @@ a {
   width: 21px;
   height: 39px;
   visibility: visible;
-  background: url('../img/icon-back.svg') no-repeat 0 0;
+  background: url("../img/icon-back.svg") no-repeat 0 0;
   z-index: 15;
 }
 
@@ -1054,7 +1054,7 @@ a {
   height: 16px;
   position: absolute;
   left: 27px;
-  background: url('../img/icon-cart.svg') no-repeat 0 0;
+  background: url("../img/icon-cart.svg") no-repeat 0 0;
   opacity: 0.3;
 }
 
@@ -1104,7 +1104,7 @@ a {
 .new-price {
   color: var(--basic-color);
   background: var(--button-color);
-  background: url('../img/shape.png') no-repeat 100% 0;
+  background: url("../img/shape.png") no-repeat 100% 0;
   text-decoration: none;
   font-weight: bold;
   padding: 10px 47px 10px 32px;
@@ -1245,7 +1245,7 @@ a {
   right: 0;
   width: 10px;
   height: 279px;
-  background: url('../img/service-line.png') no-repeat 0 0;
+  background: url("../img/service-line.png") no-repeat 0 0;
 }
 
 .btn-services.active {
@@ -1277,7 +1277,7 @@ a {
 }
 
 .service-delivery {
-  background: url('../img/bg-dostavka.png') no-repeat 100% 21px;
+  background: url("../img/bg-dostavka.png") no-repeat 100% 21px;
 }
 
 .service-delivery .text {
@@ -1285,7 +1285,7 @@ a {
 }
 
 .service-assurance {
-  background: url('../img/bg-garantiya.png') no-repeat 100% 0;
+  background: url("../img/bg-garantiya.png") no-repeat 100% 0;
 }
 
 .service-assurance .text {
@@ -1293,7 +1293,7 @@ a {
 }
 
 .service-credit {
-  background: url('../img/bg-credit.png') no-repeat 100% 0;
+  background: url("../img/bg-credit.png") no-repeat 100% 0;
 }
 
 .service-credit .text {
@@ -1503,19 +1503,19 @@ a {
 }
 
 .link-vk {
-  background-image: url('../img/icon-vk.svg');
+  background-image: url("../img/icon-vk.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .link-fb {
-  background-image: url('../img/icon-fb.svg');
+  background-image: url("../img/icon-fb.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .link-inst {
-  background-image: url('../img/icon-insta.svg');
+  background-image: url("../img/icon-insta.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -1583,32 +1583,32 @@ a {
   line-height: 21px;
   color: var(--text-color);
   padding-left: 56px;
-  background: url('../img/icon-user.svg') no-repeat 15px 0;
+  background: url("../img/icon-user.svg") no-repeat 15px 0;
 }
 
 .profile-link:hover {
-  background-image: url('../img/icon-user-hover.svg');
+  background-image: url("../img/icon-user-hover.svg");
   text-decoration: none;
 }
 
 .profile-link:active {
   color: var(--text-color-active);
-  background-image: url('../img/icon-user.svg');
+  background-image: url("../img/icon-user.svg");
 }
 
 .profile-exit {
   width: 20px;
   height: 17px;
   margin: auto;
-  background: url('../img/icon-login-exit.svg') no-repeat 0 0;
+  background: url("../img/icon-login-exit.svg") no-repeat 0 0;
 }
 
 .profile-exit:hover {
-  background: url('../img/icon-login-exit-hover.svg') no-repeat 0 0;
+  background: url("../img/icon-login-exit-hover.svg") no-repeat 0 0;
 }
 
 .profile-exit:active {
-  background-image: url('../img/icon-login.svg');
+  background-image: url("../img/icon-login.svg");
 }
 
 .profile-list {
@@ -1721,7 +1721,7 @@ a {
   left: 0;
   width: 14px;
   height: 12px;
-  background: url('../img/icon-home.svg') no-repeat 0 0;
+  background: url("../img/icon-home.svg") no-repeat 0 0;
 }
 
 
@@ -1899,7 +1899,7 @@ a {
   position: absolute;
   bottom: -2px;
   left: -2px;
-  background: url('../img/check.svg') no-repeat 0 0;
+  background: url("../img/check.svg") no-repeat 0 0;
 }
 
 .filter-checkbox:checked+.filter-label::before {
@@ -1909,7 +1909,7 @@ a {
   position: absolute;
   bottom: -2px;
   left: -2px;
-  background: url('../img/check-on.svg') no-repeat 0 0;
+  background: url("../img/check-on.svg") no-repeat 0 0;
 }
 
 .filter-radio+.filter-label::before {
@@ -2086,30 +2086,30 @@ a {
   display: block;
   width: 11px;
   height: 10px;
-  background: url('../img/arrow-high.svg') no-repeat 0 0;
+  background: url("../img/arrow-high.svg") no-repeat 0 0;
 }
 
 .scroll-up:hover {
-  background: url('../img/arrow-high-hover.svg') no-repeat 0 0;
+  background: url("../img/arrow-high-hover.svg") no-repeat 0 0;
 }
 
 .scroll-up.active {
-  background: url('../img/arrow-high-active.svg') no-repeat 0 0;
+  background: url("../img/arrow-high-active.svg") no-repeat 0 0;
 }
 
 .scroll-down {
   display: block;
   width: 11px;
   height: 10px;
-  background: url('../img/arrow-low.svg') no-repeat 0 0;
+  background: url("../img/arrow-low.svg") no-repeat 0 0;
 }
 
 .scroll-down:hover {
-  background: url('../img/arrow-low-hover.svg') no-repeat 0 0;
+  background: url("../img/arrow-low-hover.svg") no-repeat 0 0;
 }
 
 .scroll-down.active {
-  background: url('../img/arrow-low-active.svg') no-repeat 0 0;
+  background: url("../img/arrow-low-active.svg") no-repeat 0 0;
 }
 
 .scroll-btn:hover {
@@ -2233,7 +2233,7 @@ a {
   right: 11px;
   width: 22px;
   height: 22px;
-  background: url('../img/icon-close.svg') no-repeat 0 0;
+  background: url("../img/icon-close.svg") no-repeat 0 0;
   border: 0;
   cursor: pointer;
   z-index: 17;
@@ -2316,7 +2316,7 @@ a {
   left: 81px;
   width: 66px;
   height: 66px;
-  background: url('../img/icon-mark.svg') no-repeat 0 0;
+  background: url("../img/icon-mark.svg") no-repeat 0 0;
 }
 
 .comlete-cart-buttons {
