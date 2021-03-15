@@ -25,7 +25,8 @@
         </a>
 
         <form class="search" action="https://echo.htmlacademy.ru" method="get">
-          <input class="search-input" type="search" placeholder="Поиск: ">
+          <label class="visually-hidden" for="search">Поиск по сайту</label>
+          <input class="search-input" id="search" type="search" placeholder="Поиск: ">
           <svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 17 17" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -70,7 +71,7 @@
         <ul class="nav-list">
           <li class="list-item"><a href="index.html" class="site-link">Главная</a></li>
           <li class="list-item"><a href="blank.html" class="site-link">Компания</a></li>
-          <li class="list-item"><a href="catalog.html" class="site-link">Каталог</a></li>
+          <li class="list-item"><a class="site-link">Каталог</a></li>
           <li class="list-item"><a href="blank.html" class="site-link">Новости</a></li>
           <li class="list-item"><a href="blank.html" class="site-link">Спецпредложения</a></li>
           <li class="list-item"><a href="blank.html" class="site-link">Доставка</a></li>
@@ -87,7 +88,7 @@
           <a class="link-crumbs home" href="index.html" aria-label="Главная"></a>
         </li>
         <li class="item-crumbs">
-          <a class="link-crumbs" href="catalog.html">Каталог</a>
+          <a class="link-crumbs">Каталог</a>
         </li>
         <li class="item-crumbs">
           <a class="link-crumbs" href="blank.html">Инструмент</a>
@@ -160,13 +161,11 @@
               <legend class="set-title">Питание:</legend>
               <ul>
                 <li class="list-item">
-
                   <input class="visually-hidden filter-radio" type="radio" name="power-group" value="battery-supply"
                     id="filter-battery-supply" checked>
                   <label class="filter-label" for="filter-battery-supply">Аккумуляторные</label>
                 </li>
                 <li class="list-item">
-
                   <input class="visually-hidden filter-radio" type="radio" name="power-group" value="mains-supply"
                     id="filter-mains-supply">
                   <label class="filter-label" for="filter-mains-supply">Сетевые</label>
@@ -384,12 +383,11 @@
       <div class="cont">
         <h2 class="title">Пара слов о перфораторах</h2>
         <p class="text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления
-          отверстий в кирпиче,
-          бетоне и камне.</p>
-        <p class="text">Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять
+          отверстий в кирпиче, бетоне и камне. <br> Существуют электромеханические и пневматические перфораторы.
+          Современные модели могут выполнять
           функции дрели,
-          шуруповерта и отбойного молотка.</p>
-        <p class="text">В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный
+          шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут
+          совмещены отбойный
           молоток и ударная
           дрель.</p>
       </div>
@@ -400,7 +398,7 @@
   <footer class="main-footer">
     <div class="cont">
       <section class="top-footer">
-        <a class="footer-logo">
+        <a class="footer-logo" href="index.html">
           <img src="img/logo-technomart.svg" width="138" height="23" alt="Логотип интернет-магазина Техномарт">
         </a>
 
@@ -414,7 +412,7 @@
           </li>
 
           <li class="list-item">
-            <a class="nav-link" href="catalog.html">Каталог</a>
+            <a class="nav-link">Каталог</a>
           </li>
 
           <li class="list-item">

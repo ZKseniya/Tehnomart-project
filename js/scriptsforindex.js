@@ -58,9 +58,9 @@ sliderButtons.onclick = function (event) {
 
     }
 
-      if (indexNextSlide == 0) {
-        sliderBack.disabled = true;
-      }
+    if (indexNextSlide == 0) {
+      sliderBack.disabled = true;
+    }
   }
 
   if (target.classList.contains('control-item')) {
@@ -174,7 +174,7 @@ closeUser.addEventListener('click', function(evt) {
   evt.preventDefault();
 
   modalUser.classList.remove('show');
-  modalUser.classList.remove("modal-error");
+  modalUser.classList.remove('modal-error');
 });
 
 // Валидация формы

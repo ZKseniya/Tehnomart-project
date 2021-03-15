@@ -25,7 +25,8 @@
             alt="Логотип интернет-магазина Техномарт">
         </a>
         <form class="search" action="https://echo.htmlacademy.ru" method="get">
-          <input class="search-input" type="search" placeholder="Поиск: ">
+          <label class="visually-hidden" for="search">Поиск по сайту</label>
+          <input class="search-input" id="search" type="search" placeholder="Поиск: ">
           <svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 17 17" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -60,7 +61,7 @@
       </section>
       <nav class="site-nav">
         <ul class="nav-list">
-          <li class="list-item"><a href="index.html" class="site-link">Главная</a></li>
+          <li class="list-item"><a class="site-link">Главная</a></li>
           <li class="list-item"><a href="blank.html" class="site-link">Компания</a></li>
           <li class="list-item"><a href="catalog.html" class="site-link">Каталог</a></li>
           <li class="list-item"><a href="blank.html" class="site-link">Новости</a></li>
@@ -104,7 +105,7 @@
       </div>
 
       <div class="promo-slider">
-        <div class="slider-item active" data-tab="0" >
+        <div class="slider-item active" data-tab="0">
           <div class="slider-desc">
             <h3 class="slider-title">Перфораторы</h3>
             <p>Настоящие мужские игрушки</p>
@@ -274,8 +275,8 @@
     <section class="services">
       <div class="cont">
         <h2 class="title">Сервисы</h2>
-        <p class="text">Хороший интернет-магазин отличается от плохого не только ценами!</p>
-        <p class="text">Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <p class="text">Хороший интернет-магазин отличается от плохого не только ценами!
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 
 
         <div class="service-buttons">
@@ -295,8 +296,7 @@
             <h3 class="title">Гарантия</h3>
             <p class="text">Если купленный у нас товар поломается или заискрит, а также в случае пожара,
               спровацированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший
-              товар на новый. Дом уж
-              востановите как-нибудь сами. </p>
+              товар на новый. Дом уж востановите как-нибудь сами. </p>
           </div>
           <div class="service-credit services-desc" data-tab="2">
             <h3 class="title">Кредит</h3>
@@ -329,7 +329,9 @@
 
         <p class="text">Вы можете забрать товар сами, <br> заехав в наш офис:</p>
 
-        <a class="map-link" href="https://yandex.ru/maps/2/saint-petersburg/?from=api-maps&ll=30.310297%2C59.936379&mode=usermaps&origin=jsapi_2_1_74&um=constructor%3A95dc2313dc47fe3fa1b80e8427096351bdc88b612fd78330ab9b3d5aa474b05b&z=15"><img class="map-img" src="img/map.png" width="300" height="158"
+        <a class="map-link"
+          href="https://yandex.ru/maps/2/saint-petersburg/?from=api-maps&ll=30.310297%2C59.936379&mode=usermaps&origin=jsapi_2_1_74&um=constructor%3A95dc2313dc47fe3fa1b80e8427096351bdc88b612fd78330ab9b3d5aa474b05b&z=15"><img
+            class="map-img" src="img/map.png" width="300" height="158"
             alt="Санкт-Петербург, Большая Конюшенная улица, дом 19"></a>
 
         <a class="btn btn-feedback" href="">Заблудились? Напишите нам!</a>
@@ -408,6 +410,7 @@
           <li class="list-item">
             <a class="social-link link-inst" href="#" aria-label="Instagram"></a>
           </li>
+
         </ul>
 
         <p class="feedback">Обратная связь: <br>
